@@ -1,11 +1,3 @@
-// MERN = Mongo + Express + React + Node
-
-// Development = Node.js server + React server
-
-// MEN
-
-// E - Express
-
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -17,7 +9,7 @@ const bcrypt = require('bcryptjs')
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb://localhost:27017/full-mern-stack-video')
+mongoose.connect('mongodb://localhost:27017/mern-stack-authentication')
 
 app.post('/api/register', async (req, res) => {
 	console.log(req.body)
